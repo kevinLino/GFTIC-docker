@@ -1,0 +1,16 @@
+services:
+        Curso:
+                container_name:
+                        "web-1"
+                image:
+                        "konotsuba/curso:latest"
+                ports:
+                        - 8080:80
+
+        Curso_Prod:
+                container_name:
+                        "prod-1"
+                image:
+                        "konotsuba/curso:1.2.0"
+                ports:
+                        - 80:80
